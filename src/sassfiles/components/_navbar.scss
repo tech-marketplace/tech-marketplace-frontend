@@ -1,0 +1,43 @@
+.navbar{
+  display: flex;
+  justify-content: center;
+  border-color: rgba(36,0,164,1);
+  border: 1px 1px 1px 1px;
+}
+
+.navLeft {
+  padding-left: 99px;
+  display: flex;
+  align-items: center; /* Vertically center items */
+}
+
+.logoAndText {
+  display: flex;
+  align-items: center; /* Vertically center items */
+}
+
+.logoAndText img {
+  margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+.logo-name{
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  }
+
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+  
+}
+
+#search {
+  width: 350px;
+  text-align: left;
+  border-radius: 40px;
+  background-color: rgba(217,217,217,0.2);
+  
+}

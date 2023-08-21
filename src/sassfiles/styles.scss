@@ -1,0 +1,13 @@
+@use './reset';
+@use './font' as *;
+
+@use './components/navbar';
+@use './components/footer';
+
+//button styles
+@use './components/Buttons/buynow';
+@use './components/Buttons/authenticationBtn';
+@use './components/navbar';
+
+//pages
+@use './pages/home';

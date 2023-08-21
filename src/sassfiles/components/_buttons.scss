@@ -1,0 +1,50 @@
+@use '../colors' as *;
+@mixin Btns{
+    background: $btncolor;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    color: $btntextcolor;
+}
+.LoginBtn{
+    @include Btns;
+    width: 130px;
+    }
+.SignUpBtn{
+    @include Btns;
+    width: 130px;
+}
+.BuyNowBtn{
+    @include Btns;
+    width: 130px;
+}
+.sellbtn{
+    @include Btns;
+    width: 130px;
+}
+.mtnbtn{
+    @include Btns;
+    width: 130px;
+}
+.legalmobtn{
+    @include Btns;
+    width: 130px;
+}
+.trulancebtn{
+    @include Btns;
+    width: 130px;
+}
+.havenbtn{
+    @include Btns;
+    width: 130px;
+}
+.product-button{
+    background: $btncolor;
+}
+.product-buttons{
+    @include Btns;
+    width: 130px;
+   }
