@@ -1,0 +1,33 @@
+.login-form {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+.signup-form {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+.login-form input {
+    margin-bottom: 10px; /* Add spacing between items */
+}
+.signup-form label,
+.signup-form input {
+    margin-bottom: 10px; /* Add spacing between items */
+}
+/* Style for input container */
+.input-container {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for inputs */
+  input {
+    width: fit-content;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Apply border radius */
+  }

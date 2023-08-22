@@ -5,7 +5,7 @@ import '../../sassfiles/components/_buttons.scss'
 export const Loginbtn=()=> {
   return (
     <div>
-      <Link to='/login'>
+      <Link to='/product-details'>
       <button className="LoginBtn">Login</button>
       </Link>
     </div>

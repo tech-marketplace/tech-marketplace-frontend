@@ -1,11 +1,11 @@
 import React from 'react'
 import logoIcon from '../assets/icons/logo.svg'
-import { Loginbtn } from './Buttons/AuthenticationButtons';
 import { Link, useLocation } from 'react-router-dom';
 import loginButtonConfig from './loginButtonConfig';
 import cartIcon from '../assets/icons/carticon.svg';
 import searchIcon from '../assets/icons/search.svg';
 import '../sassfiles/components/_navbar.scss';
+import NavLoginbtn from './Buttons/NavLoginbtn';
 
 function Navbar() {
  const location = useLocation();
@@ -29,7 +29,7 @@ function Navbar() {
         </Link>
         {shouldRenderLoginButton && (
           <Link to='/login'>
-            <Loginbtn/>
+            <NavLoginbtn/>
           </Link>
         )}
       </div>

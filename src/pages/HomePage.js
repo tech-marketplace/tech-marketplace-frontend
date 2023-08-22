@@ -15,6 +15,7 @@ import MTNbtn from '../components/Buttons/MTNbtn'
 import LegalMobtn from '../components/Buttons/LegalMobtn'
 import Trulancebtn from '../components/Buttons/Trulancebtn'
 import Havenbtn from '../components/Buttons/Havenbtn'
+import ImpactCards from '../components/Cards/ImpactCards'
 
 function HomePage() {
   return (
@@ -41,7 +42,7 @@ function HomePage() {
           <VendorCards/>
         </div>
         <div className='product-section'>
-          <div className='buttons'>
+          <div className='vendor-buttons'>
             <MTNbtn/> 
             <LegalMobtn/>
             <Trulancebtn/>
@@ -55,9 +56,8 @@ function HomePage() {
           <header><h1>Why Choose Us</h1></header>
         
         </div>
-        <div>
-          <header><h1>Our Impact</h1></header>
-        
+        <div className='impact-section'>
+          <ImpactCards/>        
         </div>      
       <Footer/>
     </>

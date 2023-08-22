@@ -1,26 +1,24 @@
-footer{
+.footer{
+    border: 1px solid;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: blue;
-    border-color: rgba(0,0,0,1);
-    border: 1px 1px 1px 1px;
     display: flex;
-    width: 1512px;
     height: 291px;
     justify-content: space-around;
-   }
+}
 .footerLeft{
     justify-content: left;
-    width: 159px;
+    width: 200px;
     height: 136px;
-    border-radius: 159px;
-    padding-top: 2569px;
-    padding-left: 46px;
+    padding-top: 170px;
     text-align: center;
 }
 
 .footerCentre{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
     color: #000;
     font-family: Rubik;
     font-size: 20px;
@@ -30,9 +28,10 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
-   }
+}
 
 .footerRight{
+    padding-top: 230px;
     align-self: right;
     text-align: right;
     color: #000;
@@ -42,4 +41,26 @@ footer{
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.03px;
-  }
+    text-decoration: underline rgba(0,164,149,1);
+}
+.divider {
+    margin: 10px 0; /* Adjust the margin as needed */
+}
+  
+.horizontal-line {
+    border: 2px solid black; /* Define line appearance */
+    margin-top: 5px; /* Adjust the margin as needed */
+    margin-bottom: 20px;
+    width: 600px;
+}
+.top-row {
+    display: flex; /* Display children in a row */
+    align-items: center; /* Center items vertically within the container */
+}
+.phone-one{
+    padding-left: 100px;
+    padding-right: 5px;
+}
+.phone-two{
+    padding-left: 5px;
+}
