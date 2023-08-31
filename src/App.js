@@ -5,7 +5,8 @@ import HomePage from './pages/HomePage';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
 import PartnershipRequestPage from './pages/PartnershipRequestPage';
-
+import ProfilePage from './pages/ProfilePage';
+import PurchasedItemsPage from './pages/PurchasedItemsPage'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path='/product-details' element={<ProductDetails/>} />
         <Route path='/cart' element={<Cart/>} />
         <Route path='/request-form' element={<PartnershipRequestPage/>} />
+        <Route path='/profile' element={<ProfilePage/>} />
+        <Route path='/purchased-items' element={<PurchasedItemsPage/>} />
       </Routes>
     </div>
     </Router>

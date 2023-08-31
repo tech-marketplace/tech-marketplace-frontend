@@ -11,12 +11,10 @@ export const LoginForm=()=> {
     <div>
       <form className='login-form'>
       <div className='input-container'>
-          <label htmlFor='email'>Email</label>
-          <input id='email'placeholder='Enter your email address' type='text'></input>
-        </div>
+        <input id='email'placeholder='Email' type='text'></input>
+      </div>
         <div className='input-container'>
-          <label htmlFor='password'>Password</label>
-          <input id='password'placeholder='Enter your password' type='password'></input>
+          <input id='password'placeholder='Password' type='password'></input>
         </div>
       </form>
       <Loginbtn/>
@@ -32,22 +30,18 @@ export const SignUpForm=()=> {
     <div>
       <form className='login-form'>
         <div className='input-container'>
-          <label htmlFor='first-name'>First Name</label>
-          <input id='first-name'placeholder='Enter your first name' type='text'></input>
+          <input id='first-name'placeholder='First Name' type='text'></input>
         </div>
 
         <div className='input-container'>
-          <label htmlFor='last-name'>Last Name</label>
-          <input id='last-name'placeholder='Enter your last name' type='text'></input>
+          <input id='last-name'placeholder='Last Name' type='text'></input>
         </div>
 
         <div className='input-container'>
-          <label htmlFor='email'>Email</label>
-          <input id='email'placeholder='Enter your email address' type='text'></input>
+          <input id='email'placeholder='Email' type='text'></input>
         </div>
         <div className='input-container'>
-          <label htmlFor='password'>Password</label>
-          <input id='password'placeholder='Enter your password' type='password'></input>
+          <input id='password'placeholder='Password' type='password'></input>
         </div>
       </form>
       <SignUpbtn/>

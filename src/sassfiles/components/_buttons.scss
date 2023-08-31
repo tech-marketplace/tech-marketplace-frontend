@@ -22,6 +22,7 @@
     color: rgba(0,0,0,1);
     border: 1px solid;
     border-color: rgba(36, 0, 164, 1);
+    width: fit-content;
 }
 .sellbtn{
     @include Btns;
@@ -29,6 +30,8 @@
     color: rgba(0,0,0,1);
     border: 1px solid;
     border-color: rgba(36, 0, 164, 1);
+    width: fit-content;
+    padding: 20px;
 }
 .mtnbtn{
     @include Btns;
@@ -54,4 +57,21 @@
     color: rgba(0,0,0,1);
     border: 1px solid;
     border-color: rgba(36, 0, 164, 1);
+}
+.heroBuyNowbtn{
+    @include Btns;
+    width: fit-content;
+    background-color: transparent;
+    color: rgba(0,0,0,1);
+    border: 1px solid;
+    border-color: rgba(36, 0, 164, 1);
+}
+.heroSellbtn{
+    @include Btns;
+    width: fit-content;
+    background-color: transparent;
+    color: rgba(0,0,0,1);
+    border: 1px solid;
+    border-color: rgba(36, 0, 164, 1);
+
 }

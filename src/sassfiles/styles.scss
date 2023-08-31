@@ -1,5 +1,6 @@
 @use './reset';
 @use './font' as *;
+@use './colors';
 
 @use './components/navbar';
 @use './components/footer';
@@ -11,3 +12,9 @@
 
 //pages
 @use './pages/home';
+@use './pages/cart';
+@use './pages/authentication';
+@use './pages/productdetails';
+@use './pages/purchaseditems';
+@use './page/partnershiprequest';
+@use './pages/profile'

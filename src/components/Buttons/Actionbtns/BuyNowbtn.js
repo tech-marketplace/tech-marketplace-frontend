@@ -1,5 +1,6 @@
 import React from 'react'
-import '../../sassfiles/components/_buttons.scss'
+import '../../../sassfiles/components/_buttons.scss'
+
 
 function BuyNowbtn() {
   return (

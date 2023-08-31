@@ -2,6 +2,7 @@ import React from 'react'
 import ProductPicture from '../../assets/images/productheroimage.png'
 import '../../sassfiles/components/_cards.scss'
 import { Link } from 'react-router-dom';
+import Plusbtn from '../Buttons/Actionbtns/Plusbtn';
 
 const img= ProductPicture
 const name='Ecommerce Application';
@@ -49,6 +50,7 @@ return(
       <p>{detail}</p>
     </Link>
     <h2>{price}</h2>
+    <Plusbtn/>
   </article>
 )
 };
