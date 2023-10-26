@@ -1,77 +1,136 @@
-@use '../colors' as *;
-@mixin Btns{
-    width: 130px;
-    background: $btncolor;
-    border-radius: 10px;
-    height: 45px;
-    font-size: 14px;
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    color: $btntextcolor;
+@use "../colors" as *;
+@mixin Btns {
+  width: 10rem;
+  //   background: #fff;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 600;
+  //   color: $btntextcolor;
+  &:hover {
+    background-color: $btncolor;
+    color: $secTextColor;
+  }
+  &:focus {
+    background-color: $btncolor;
+    color: $secTextColor;
+  }
 }
-.LoginBtn{
-    @include Btns;
+@mixin CartBtns {
+  width: 3rem;
+  //   background: #fff;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 600;
+  //   color: $btntextcolor;
+  background-color: $btncolor;
+  color: $secTextColor;
 }
-.SignUpBtn{
-    @include Btns;
+.LoginBtn {
+  @include Btns;
 }
-.BuyNowBtn{
-    @include Btns;
-    background-color: transparent;
-    color: rgba(0,0,0,1);
-    border: 1px solid;
-    border-color: rgba(36, 0, 164, 1);
-    width: fit-content;
+.SignUpBtn {
+  @include Btns;
 }
-.sellbtn{
-    @include Btns;
-    background-color: transparent;
-    color: rgba(0,0,0,1);
-    border: 1px solid;
-    border-color: rgba(36, 0, 164, 1);
-    width: fit-content;
-    padding: 20px;
+.BuyNowBtn {
+  @include Btns;
+  background-color: transparent;
+  border: 1px solid $btncolor;
+  color: $pryTextColor;
 }
-.mtnbtn{
-    @include Btns;
+.sellbtn {
+  @include Btns;
+  background-color: transparent;
+  border: 1px solid $btncolor;
+  color: $pryTextColor;
 }
-.legalmobtn{
-    @include Btns;
+.LoginBtn {
+  @include Btns;
+  background-color: transparent;
+  border: 1px solid $btncolor;
+  color: $pryTextColor;
 }
-.trulancebtn{
-    @include Btns;
+.addToCartBtn {
+  @include CartBtns;
+  // background-color: transparent;
+  border: 1px solid $btncolor;
+  // color: $pryTextColor;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.havenbtn{
-    @include Btns;
+.mtnbtn {
+  @include Btns;
+  background-color: transparent;
+  border: 1px solid $btncolor;
+  color: $pryTextColor;
 }
-.product-button{
-    background: $btncolor;
+.legalmobtn {
+  @include Btns;
+  background-color: transparent;
+  border: 1px solid $btncolor;
+  color: $pryTextColor;
 }
-.product-buttons{
-    @include Btns;
+.trulancebtn {
+  @include Btns;
+  background-color: transparent;
+  border: 1px solid $btncolor;
+  color: $pryTextColor;
 }
-.navlogin{
-    @include Btns;
-    background-color: transparent;
-    color: rgba(0,0,0,1);
-    border: 1px solid;
-    border-color: rgba(36, 0, 164, 1);
+.havenbtn {
+  @include Btns;
+  background-color: transparent;
+  border: 1px solid $btncolor;
+  color: $pryTextColor;
 }
-.heroBuyNowbtn{
-    @include Btns;
-    width: fit-content;
-    background-color: transparent;
-    color: rgba(0,0,0,1);
-    border: 1px solid;
-    border-color: rgba(36, 0, 164, 1);
+.product-button {
+  background: $btncolor;
 }
-.heroSellbtn{
-    @include Btns;
-    width: fit-content;
-    background-color: transparent;
-    color: rgba(0,0,0,1);
-    border: 1px solid;
-    border-color: rgba(36, 0, 164, 1);
+.product-buttons {
+  @include Btns;
+}
+.navlogin {
+  @include Btns;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid;
+  border-color: rgba(36, 0, 164, 1);
+}
+.heroBuyNowbtn {
+  @include Btns;
+  width: fit-content;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid;
+  border-color: rgba(36, 0, 164, 1);
+}
+.heroSellbtn {
+  @include Btns;
+  width: fit-content;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+  border: 1px solid;
+  border-color: rgba(36, 0, 164, 1);
+}
 
+.addBtn {
+  background-color: $btncolor;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 40px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.cardBgg {
+  width: 288px;
+  height: 238px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border-right: 6px solid $btncolor;
+  border-left: 6px solid $btncolor;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // height: 100%;
 }

@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
-// import './sassfiles/styles.min.css';
-// import "./sassfiles/styles.css";
+import "./sassfiles/styles.min.css";
+import "./sassfiles/styles.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//Provider
+import store from "./features/store";
+import { Provider } from "react-redux";
+import { productsFetch } from "./features/productsSlice";
+import { getTotals } from "./features/cartSlice";
+import { loadUser } from "./features/authSlice";
+
+store.dispatch(productsFetch());
+store.dispatch(getTotals());
+store.dispatch(loadUser(null));
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      {" "}
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

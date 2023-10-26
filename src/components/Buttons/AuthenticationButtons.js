@@ -1,23 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import '../../sassfiles/components/_buttons.scss'
+import React from "react";
+import { Link } from "react-router-dom";
+// import '../../sassfiles/components/_buttons.scss'
 
-export const Loginbtn=()=> {
+export const Loginbtn = () => {
   return (
     <div>
-      <Link to='/product-details'>
-      <button className="LoginBtn">Login</button>
+      <Link to="/product-details">
+        <button className="LoginBtn">Login</button>
       </Link>
     </div>
   );
-}
+};
 
-export const SignUpbtn=()=> {
+export const SignUpbtn = () => {
   return (
     <div>
-      <Link to='/login'>
-      <button className="SignUpBtn">Sign Up</button>
+      <Link to="">
+        <button className="SignUpBtn">Sign Up</button>
       </Link>
     </div>
   );
-}
+};

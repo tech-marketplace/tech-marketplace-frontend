@@ -1,87 +1,42 @@
-/* _footer.scss */
+// /* Define custom styles for your footer */
+// .footer {
+//   background-color: white; /* Dark background color */
+//   padding: 20px 0;
+//   border: 1px solid; /* Text color */
+// }
 
-/* Import Bootstrap variables and mixins if needed */
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+// // .footerCentre {
+// // }
+// .footerCentre {
+//   text-align: center;
+// }
 
-/* Define custom styles for your footer */
-.footer {
-  background-color: white; /* Dark background color */
-  padding: 20px 0;
-  border: 1px solid; /* Text color */
-  
-  .container {
-    margin: 0 auto;
-    text-align: center;
+// .top-row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center; /* Vertically center items */
+//   margin-bottom: 10px;
+// }
+// .email-address,
+// .phone-one,
+// .phone-two {
+//   flex: 1;
+//   font-size: 20px;
+//   font-weight: bold;
+// }
+// .divider {
+//   margin: 0 10px;
+//   font-size: 18px;
+// }
+// .horizontal-line {
+//   border-top: 2px solid black; /* White horizontal line */
+//   margin: 15px 0;
+// }
 
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-
-      .footerCentre {}
-
-      .footerLeft {
-        img {
-          max-width: 100px;
-          height: auto;
-        }
-
-        p {
-          margin-top: 10px;
-          font-size: 16px;
-          font-weight: bold;
-        }
-      }
-
-      .footerCentre {
-        text-align: center;
-
-        .top-row {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center; /* Vertically center items */
-          margin-bottom: 10px;
-
-          .email-address,
-          .phone-one,
-          .phone-two {
-            flex: 1;
-            font-size: 20px;
-            font-weight: bold;
-
-          }
-
-          .divider {
-            margin: 0 10px;
-            font-size: 18px;
-          }
-        }
-
-        .horizontal-line {
-          border-top: 2px solid black; /* White horizontal line */
-          margin: 15px 0;
-        }
-
-        .socialmediaicons {
-          img {
-            max-width: 150px;
-            height: auto;
-          }
-        }
-      }
-
-      .footerRight {
-        text-align: right;
-
-        h5 {
-          font-size: 18px;
-          margin-bottom: 10px;
-          text-decoration: underline green; /* Underline color */
-        }
-      }
-    }
-  }
-}
+// .socialmediaicons,
+// .footerRight {
+//   text-align: right;
+// }
+// //   }
+// // }
+// // }
