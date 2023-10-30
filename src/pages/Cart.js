@@ -47,11 +47,13 @@ const Cart = () => {
         {/* <div></div> */}
         {/* <h1>Cart Total</h1> */}
         {cart.cartItems.length === 0 ? (
-          <div className="property">
-            <p>Your cart is empty</p>
+          <div className="text-center">
+            <h4>Shopping Cart</h4>
+            <p className="mt-3 light-grey-color">Your cart is empty</p>
             <div>
-              <Link to="/">
-                <p>Start Shopping</p>
+              <Link to="/" className="text-decoration-none text-black">
+                <i class="bi bi-arrow-left me-2"></i>
+                Start Shopping
               </Link>
             </div>
           </div>
@@ -64,21 +66,21 @@ const Cart = () => {
               <div className="value">Quantity</div>
               <div className="property">Total</div> */}
             {/* </div> */}
-            <div className="d-lg-flex justify-content-center">
+            <div className="d-lg-flex justify-content-center align-items-center">
               <div className="col-lg-8">
                 {cart.cartItems?.map((cartItem) => (
                   <div key={cartItem._id}>
-                    <div className="d-lg-flex">
+                    <div className="d-lg-flex mt-5">
                       <div className="col-4">
                         {" "}
                         <img src={cartItem.itemImage} alt={cartItem.name} />
                       </div>
-                      <div className="col-lg-7 d-lg-flex">
+                      <div className="col-lg-7 d-lg-flex align-items-center">
                         <div>
                           <div>
-                            <h3>{cartItem.title}</h3>
+                            <h4>{cartItem.title}</h4>
                             <p>{cartItem.description}</p>
-                            <p>N{cartItem.price}</p>
+                            <p className="m-0 p-0">N{cartItem.price}</p>
                           </div>
                           {/* <div>
                         <p>{cartItem.countInStock}</p>
@@ -90,7 +92,7 @@ const Cart = () => {
                             <a
                               href=""
                               onClick={() => handleRemoveFromCart(cartItem)}
-                              className="text-decoration-none text-black"
+                              className="text-decoration-none light-grey-color"
                             >
                               {" "}
                               Remove
@@ -100,14 +102,14 @@ const Cart = () => {
                         <div className="d-flex align-items-center">
                           <button
                             onClick={() => handleDecreaseCart(cartItem)}
-                            className="mx-2"
+                            className="MinusBtn mx-2"
                           >
                             -
                           </button>
                           <div>{cartItem.cartQuantity}</div>
                           <button
                             onClick={() => handleIncreaseCart(cartItem)}
-                            className="mx-2"
+                            className="PlusBtn mx-2"
                           >
                             +
                           </button>
@@ -120,24 +122,62 @@ const Cart = () => {
                 ))}
               </div>
               <div className="col-lg-3 mt-5">
-                {" "}
-                <div>
+                <div className="card p-3 card-div">
+                  {" "}
                   <div>
-                    <p>Subtotal</p>
-                    <p>${cart.cartTotalAmount}</p>
-                    <p>Taxes and shipping calculated at checkout</p>
+                    <div>
+                      <h4>Cart Total</h4>
+                      <div className="d-flex justify-content-between">
+                        <p>
+                          Subtotal <br />
+                          <p style={{ fontSize: "0.7rem" }} className="p-0 m-0">
+                            (Tax inclusive)
+                          </p>
+                        </p>
+                        {/* <p className="p-0 m-0">Taxes incls.</p> */}
+                        <p>N{cart.cartTotalAmount}</p>
+                      </div>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                      <p>Total</p>
+                      <p className="bold-text">N{cart.cartTotalAmount}</p>
+                    </div>
+                    {auth._id ? (
+                      <div className="text-center">
+                        <button className="LoginBtn">Checkout</button>
+                      </div>
+                    ) : (
+                      <div className="text-center">
+                        {" "}
+                        <button
+                          className="LoginBtn"
+                          onClick={() => navigate("/login")}
+                        >
+                          Log in to checkout
+                        </button>
+                      </div>
+                    )}{" "}
+                  </div>{" "}
+                  <div className="d-flex justify-content-between mt-4">
+                    <a
+                      href="/"
+                      className="text-decoration-none text-black"
+                      style={{ fontSize: "0.9rem" }}
+                    >
+                      <i class="bi bi-arrow-left me-2"></i>
+                      Continue Shopping
+                    </a>{" "}
+                    <div>
+                      <a
+                        href=""
+                        onClick={() => handleClearCart()}
+                        className="text-decoration-none light-grey-color"
+                      >
+                        {" "}
+                        Clear Cart
+                      </a>
+                    </div>
                   </div>
-                  {auth._id ? (
-                    <button>Checkout</button>
-                  ) : (
-                    <button onClick={() => navigate("login")}>
-                      Log in to checkout
-                    </button>
-                  )}{" "}
-                </div>{" "}
-                <a href="/">Continue Shopping</a>{" "}
-                <div>
-                  <button onClick={() => handleClearCart()}>Clear Cart</button>
                 </div>
               </div>
             </div>

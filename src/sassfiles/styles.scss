@@ -13,8 +13,8 @@
 @use "./components/cards" as *;
 // //pages
 // @use "./pages/home" as *;
-// @use "./pages/cart" as *;
-// @use "./pages/authentication" as *;
+@use "./pages/cart" as *;
+@use "./components/Forms/authenticationforms" as *; // @use "./pages/authentication" as *;
 // @use "./pages/productdetails" as *;
 // @use "./pages/purchaseditems" as *;
 // @use "./page/partnershiprequest" as *;

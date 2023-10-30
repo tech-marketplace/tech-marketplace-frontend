@@ -55,7 +55,7 @@ const Navbar = () => {
               </form>
               <div className="d-flex ms-4">
                 <Link to="/cart">
-                  <img src={cartIcon} alt="Cart" />
+                  <img src={cartIcon} alt="Cart" width={20} />
                 </Link>
                 {/* <span>
                   <button
@@ -75,7 +75,7 @@ const Navbar = () => {
                 <span>
                   <sup
                     className="cart-badge ms-1"
-                    style={{ fontSize: "0.9rem", color: "white" }}
+                    style={{ fontSize: "0.8rem", color: "white" }}
                   >
                     {" "}
                     {/* Add a div for the round background */}
@@ -87,18 +87,30 @@ const Navbar = () => {
               </div>
               {auth._id ? (
                 <button
+                  className="LoginBtn ms-4"
                   onClick={() => {
                     navigate("/");
                     dispatch(logoutUser(null));
                     toast.warning("Logged out!", { position: "bottom-left" });
                   }}
+                  // className="LoginBtn"
                 >
                   Logout
                 </button>
               ) : (
                 <>
                   {" "}
-                  <button className="LoginBtn ms-3">Login</button>
+                  <button
+                    className="LoginBtn ms-3"
+                    onClick={() => {
+                      navigate("/login");
+                      toast.warning("User logged in", {
+                        position: "bottom-left",
+                      });
+                    }}
+                  >
+                    Login
+                  </button>
                   {/* <Link to="login">Login</Link> */}
                 </>
               )}
